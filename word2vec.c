@@ -678,6 +678,7 @@ void TrainModel() {
   fclose(fo);
 }
 
+// 根据参数名称确定参数的序号
 int ArgPos(char *str, int argc, char **argv) {
   int a;
   for (a = 1; a < argc; a++) if (!strcmp(str, argv[a])) {
